@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+
+        <div class="card" data-nombre="artilugia" data-sexo="hembra" data-color="tricolor">
+            <img src="http://www.placekitten.com/200">
+            <div class="title">
+                <h4>Artilugia</h4>
+            </div>
+        </div>
+
+        <div class="card" data-nombre="boris" data-sexo="macho" data-color="tricolor">
+            <img src="http://www.placekitten.com/2000">
+            <div class="title">
+                <h4>Boris</h4>
+            </div>
+        </div>
+
+        <div class="card" data-nombre="pippin" data-sexo="macho" data-color="blanco">
+            <img src="http://www.placekitten.com/1000/600">
+            <div class="title">
+                <h4>Pippin</h4>
+            </div>
+        </div>
+
+        <div class="card" data-nombre="misu" data-sexo="macho" data-color="tricolor">
+            <img src="http://www.placekitten.com/800">
+            <div class="title">
+                <h4>Misu</h4>
+            </div>
+        </div>
+
+        <div class="card" data-nombre="cleo" data-sexo="hembra" data-color="tricolor">
+            <img src="http://www.placekitten.com/300">
+            <div class="title">
+                <h4>Cleo</h4>
+            </div>
+        </div>
+
+
+    </div>
+
+    <aside>
+        <form action="">
+            <label for="nombre"> Buscar gatito:
+                <input type="text" name="nombre" id="nombre">
+            </label>
+
+            <hr>
+
+            <label for="todos">
+                <input type="checkbox" name="colores" data-color="todos" id="todos"> Todos
+            </label>
+            <label for="gris">
+                <input type="checkbox" name="colores" data-color="gris" id="gris"> Gris
+            </label>
+
+            <label for="blanco">
+                <input type="checkbox" name="colores" data-color="blanco" id="blanco"> Blanco
+            </label>
+    
+            <label for="tricolor">
+                <input type="checkbox" name="colores" data-color="tricolor" id="tricolor">Tricolor
+            </label>
+
+
+            
+
+            <hr>
+
+            <label for="hembra">
+                <input type="radio" name="sexo" data-sexo="hembra" id="hembra">hembra
+            </label>
+
+            <label for="macho">
+                <input type="radio" name="sexo" data-sexo="macho" id="macho">Macho
+            </label>
+
+            <label for="indistinto">
+                <input type="radio" name="sexo" data-sexo="indistinto" id="indistinto" checked>Indistinto
+            </label>
+
+
+        </form>
+    </aside>
+</body>
+<script src="main.js"></script>
+
+</html>
