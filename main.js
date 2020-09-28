@@ -114,10 +114,10 @@ const hayAlgunRadioChequeado = () => {
     
     if (radio.checked) {
 
-      if (radio.dataset.sexo === "indistinto") {
+      if (radio.value === "indistinto") {
         return false;
       }
-      sexoSeleccionado = radio.dataset.sexo
+      sexoSeleccionado = radio.value;
       return true
     }
   }
@@ -141,7 +141,7 @@ const hayAlgunCheckBoxChequeado = () => {
   for (let checkbox of filtroColor) {
 
     if (checkbox.checked) {
-      coloresSeleccionados[cont] = `${checkbox.dataset.color}`;
+      coloresSeleccionados[cont] = `${checkbox.value}`;
       cont++;
 
     } 
